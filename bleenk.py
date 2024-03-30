@@ -2,7 +2,7 @@ import cv2 #camera
 import dlib #computer vision machine learning 
 from scipy.spatial import distance
 import subprocess
-
+import winsound
 #my files
 import timer
 import create_csv 
@@ -164,9 +164,10 @@ def bleenk(isFaceLandmarks, isEyeLandmarks, isWink, isStat):
 
 
                 if blink_time > notif_seconds and temp_counter < blinks_per_notif:
-                    cv2.putText(frame, f"blink bro", (0,100), cv2.FONT_HERSHEY_SIMPLEX,1, blue_color, 1)
+                    cv2.putText(frame, f"Not enough blinks", (0,100), cv2.FONT_HERSHEY_SIMPLEX,1, blue_color, 1)
                     if isBlink:
-                        print(f"blink bro. you need {temp_counter}/{blinks_per_notif}")
+                        print(f"You need to blink more: {temp_counter}/{blinks_per_notif}")
+                        winsound.PlaySound("blinksfx.wav", winsound.SND_FILENAME)
                         isBlink = False
                 elif blink_time > notif_seconds:
                     temp_counter = 0
