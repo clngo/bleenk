@@ -3,6 +3,7 @@ import dlib #computer vision machine learning
 from scipy.spatial import distance
 import subprocess
 import winsound
+
 #my files
 import timer
 import create_csv 
@@ -12,8 +13,6 @@ green_color = (0, 255, 0)
 
 global blue_color 
 blue_color = (255, 0, 0)
-
-
 
 def calculate_EAR(eye): 
     """
@@ -109,7 +108,6 @@ def bleenk(isFaceLandmarks, isEyeLandmarks, isWink, isStat):
 
             for face in faces: #dlib can detect multiple faces, so for each face in the image
 
-                    
                 #input: gray scale image and the face
                 face_landmark = dlib_facelandmark(gray, face) #output: coordinates of the landmarks
                 
@@ -195,10 +193,10 @@ def bleenk(isFaceLandmarks, isEyeLandmarks, isWink, isStat):
                 break
             elif key == 27: #ESC key
                 break
+
     except KeyboardInterrupt:
         pass
             
-
     cap.release()
     cv2.destroyAllWindows()
     hours = int(elapsed_time // 3600)
@@ -240,7 +238,6 @@ def main():
 
     print("Program has finished running")
     return 0
-
 
 
 if __name__ == "__main__":
