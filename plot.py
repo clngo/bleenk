@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import pandas as pd
-import time
 
 def preferences(file_name, y_value):
     graph_data = pd.read_csv(file_name)

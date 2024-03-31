@@ -232,7 +232,7 @@ def main():
     print("Program is starting...")
     if isFaceLandmarks or isEyeLandmarks or isWink:
         print("To stop the program, ESC or q")
-    else:
+    else:\
         print("To stop the program, CTRL+C")
     bleenk(isFaceLandmarks, isEyeLandmarks, isWink, isStat)
 
