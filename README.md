@@ -67,7 +67,7 @@ Don't forget to stay hydrated too!
 
 First, we need to detect the face. To do so, we use opencv to open the camera and dlib to detect the face. 
 Opencv produces an BGR image (blue-green-red aka true color image), so we must convert it to a grayscale image (which represents light intensity) for dlib to recognize. 
-One a face is detected, dlib produces 68 face landmarks around the face to detail each component. It's crucial for dlib to use the shape_predictor dab file as its reference model for it to detect face landmarks. 
+Once a face is detected, dlib produces 68 face landmarks around the face to detail each component. It's crucial for dlib to use the shape_predictor dab file as its reference model for it to detect face landmarks. 
 
 [![Facelandmarks][facelandmarks-screenshot]](https://datagen.tech/guides/face-recognition/facial-landmarks/)
 
