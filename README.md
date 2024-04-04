@@ -101,37 +101,22 @@ I had so much fun creating this project. Flipping on my camera and look at my fa
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-* OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. This is necessary for enabling the camera. 
+Here are a list of the packages I used for the program. To install packages, please run the command:
   ```sh
-  pip install opencv-python
+  pip install -r requirements.txt
   ```
+
+* OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. This is necessary for enabling the camera. 
 
 * Dlib. Necesarry for machine learning face landmark detection. 
-  ```sh
-  pip install dlib
-  ```
-  If you are having trouble downloading dlib, you may try an alternative method of dlib: https://github.com/sachadee/Dlib
-
 
 * SciPy is a free and open-source Python library used for scientific computing and technical computing. SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering. Necessary for calculating EAR. 
-  ```sh
-  pip install scipy
-  ```
 
 * Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. Matplotlib makes easy things easy and hard things possible.
-  ```sh
-  pip install matplotlib
-  ```
 
 * Pandas is a software library written for the Python programming language for data manipulation and analysis.
-  ```sh
-  pip install pandas
-  ```
 
-* Python-csv
-  ```sh
-  pip install python-csv
-  ```
+* Python-csv necessary to creating and updating the csv file. 
 
 **Note**
 
@@ -145,9 +130,9 @@ If you are having trouble downloading dlib, you may try an alternative method of
 
 ### Installation
 1. Clone the repo
-   ```sh
-   git clone https://github.com/clngo/bleenk.git
-   ```
+```sh
+git clone https://github.com/clngo/bleenk.git
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
