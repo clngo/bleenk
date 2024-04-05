@@ -126,6 +126,10 @@ If you come across other errors for installation, you  may want to try some of t
 pip install setuptools
 ```
 
+```sh
+pip install --upgrade wheel
+```
+
 If you are having trouble downloading dlib, you may try an alternative method of dlib: https://github.com/sachadee/Dlib
 
 ### Installation

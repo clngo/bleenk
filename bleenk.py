@@ -2,7 +2,7 @@ import cv2 #camera
 import dlib #computer vision machine learning 
 from scipy.spatial import distance
 import subprocess
-import winsound
+import playsound
 
 #my files
 import timer
@@ -165,7 +165,7 @@ def bleenk(isFaceLandmarks, isEyeLandmarks, isWink, isStat):
                     cv2.putText(frame, f"Not enough blinks", (0,100), cv2.FONT_HERSHEY_SIMPLEX,1, blue_color, 1)
                     if isBlink:
                         print(f"You need to blink more: {temp_counter}/{blinks_per_notif}")
-                        winsound.PlaySound("blinksfx.wav", winsound.SND_FILENAME)
+                        playsound.playsound("blinksfx.wav")
                         isBlink = False
                 elif blink_time > notif_seconds:
                     temp_counter = 0
