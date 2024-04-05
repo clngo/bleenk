@@ -1,12 +1,13 @@
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import pandas as pd
+import numpy as np
 
 def preferences(file_name, y_value):
     graph_data = pd.read_csv(file_name)
 
-    x = graph_data["x_value"]
-    y = graph_data["y_value"]
+    x = np.array(graph_data["x_value"])
+    y = np.array(graph_data["y_value"])
 
     plt.plot(x, y, label=y_value)
     

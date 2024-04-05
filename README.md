@@ -101,6 +101,7 @@ I had so much fun creating this project. Flipping on my camera and look at my fa
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+Use Python 3.9.4.
 Here are a list of the packages I used for the program. To install packages, please run the command:
   ```sh
   pip install -r requirements.txt
